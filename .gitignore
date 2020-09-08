@@ -1,2 +1,9 @@
-/maps/node_modules
-/maps/.cache
+/maps/node_modules/
+/maps/.cache/
+/maps/dist/
+/maps/src/.cache/
+/maps/src/dist/
+/sort/build/
+/sort/node_modules/
+/stats/build/
+/stats/node_modules/
