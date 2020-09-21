@@ -1,17 +1,7 @@
 import { User } from "./models/Users";
 
-const user = new User({ name: "Sanjay", age: 25 });
-
-user.set({ name: "Titiksha Gandhi", age: 25 });
+const user = new User({ name: "Sanjay", age: 20 });
 
 user.on("change", () => {
-  console.log("Change #1");
+  console.log("Changed");
 });
-user.on("change", () => {
-  console.log("Change #2");
-});
-user.on("click", () => {
-  console.log("Click");
-});
-
-user.trigger("click");
