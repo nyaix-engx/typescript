@@ -1,11 +1,11 @@
 import axios, { AxiosPromise } from "axios";
 import { userProps } from "./Users";
 
-interface hasId {
+export interface hasId {
   id?: number;
 }
 
-export class Sync<T extends hasId> {
+export class ApiSync<T extends hasId> {
   constructor(public url: string) {}
   fetch(id: number): AxiosPromise {
     return axios.get(`${this.url}/${id}`);
